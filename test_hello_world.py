@@ -14,7 +14,7 @@ class TestHelloWorld(unittest.TestCase):
     def test_message(self):
         response = self.app.get('/')
         message = hello_world.wrap_html('Hello PyLadies Chicago!')
-        self.assertEqual(response.data, message)
+        self.assertEqual(response.data.decode("utf-8"), message)
 
 if __name__ == '__main__':
     unittest.main()
