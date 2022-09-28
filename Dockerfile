@@ -1,4 +1,4 @@
-FROM python:2.7.14
+FROM python:3.10.7
 
 RUN mkdir /opt/hello_word/
 WORKDIR /opt/hello_word/
