@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -9,7 +9,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - 62:b3:b1:c1:7d:56:af:06:db:9b:26:70:98:e2:da:23
+            - 1f:2d:20:14:22:00:e6:4c:a4:db:90:31:00:d8:01:77
       - run:
           name: Setup VirtualEnv
           command: |
